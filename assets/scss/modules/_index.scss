@@ -1,0 +1,44 @@
+.packageCard-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.packageCard-wrapper-subtitle{
+    color: rgb(99, 102, 241);
+}
+.h1 {
+  margin-left: 45px;
+}
+
+.body {
+  background-color: #f1f5f9;
+  width: 100%;
+}
+.border-top {
+  margin-top: 30px;
+}
+
+.card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.btn {
+  margin-top: 30px;
+  margin-left: 40px;
+  border-radius: 25px;
+  width: 85px;
+}
+
+.card {
+  width: 298px;
+  max-width: 298px;
+  border-radius: 25px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.card-body {
+  background-color: white;
+  border-radius: 25px;
+}
