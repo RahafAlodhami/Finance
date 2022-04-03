@@ -1,44 +1,55 @@
-.packageCard-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+/* .packageCard-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+} */
+.packageCard-wrapper-header {
+  margin-left: 30px;
+  color: rgb(255, 255, 255);
 }
-.packageCard-wrapper-subtitle{
-    color: rgb(99, 102, 241);
+.packageCard-wrapper-subtitle {
+  margin-top: 28px;
+  color: rgb(99, 102, 241);
 }
-.h1 {
-  margin-left: 45px;
+.packageCard-wrapper-title {
+  margin-top: 27px;
+  color: rgb(30, 41, 59);
 }
-
-.body {
-  background-color: #f1f5f9;
-  width: 100%;
+.packageCard-wrapper-body{
+  background-color: rgb(226, 232, 240);
+  width: 100%; 
+ border-top: 1px solid lightgray;
+ 
 }
-.border-top {
+.packageCard-filters{
+  margin-left: 30px;
+  margin-top: 38px;
+}
+.packageCard-filters-button{
   margin-top: 30px;
-}
-
-.card-img-top {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.btn {
-  margin-top: 30px;
-  margin-left: 40px;
-  border-radius: 25px;
-  width: 85px;
-}
-
-.card {
-  width: 298px;
-  max-width: 298px;
-  border-radius: 25px;
-  margin-left: 40px;
-  margin-top: 30px;
-}
-
-.card-body {
   background-color: white;
-  border-radius: 25px;
+  border-radius: 20px;
+ 
+  margin-right: 10px;
+  &.is-active{
+    background-color: red ;
+  }
+}
+
+button:active{
+  background-color:grey ;
+}
+
+.packageCard-list{
+  margin-left: 30px;
+  margin-top: 40px;
+  width: 323px;
+  height: 394px;
+  border-radius: 30px;
+}
+
+.packageCard-img {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+ 
 }
