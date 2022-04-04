@@ -1,9 +1,7 @@
- .packageCard-wrapper {
-  // display: -webkit-box;
-  // display: -ms-flexbox;
+.packageCard-wrapper {
   display: flex;
   flex-direction: column;
-} 
+}
 .packageCard-wrapper-header {
   margin-left: 40px;
   color: rgb(255, 255, 255);
@@ -24,31 +22,20 @@
 .packageCard-wrapper-body {
   background-color: #f1f5f9;
   border-top: 1px solid #e2e8f0;
-  margin-top: 32px;
-  
+  padding: 45px 40px;
 }
-.packageCard-filters {
-  margin-left: 30px;
-  margin-top: 9px;
-  margin-left: 40px;
-}
+
 .packageCard-filters-button {
   background-color: #ffffff;
   border: none;
-  color: #64748B;
+  color: #64748b;
   padding: 8px 18px;
   margin-right: 10px;
-  margin-top: 30px; 
+  margin-top: 30px;
   font-size: 16px;
   border-radius: 20px;
-  font-size: 14px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  
- 
-  // &.is-active {
-  //    background-color: rgba(241,245,249,255);
-  // }
 }
 
 button:focus {
@@ -63,15 +50,13 @@ button:hover {
   background-color: white;
   border-radius: 30px;
   width: 321px;
-  margin-left: 10px;
-  margin-right: 19px;
-  margin-top: 50px;
-  display: inline-block;
-  
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .packageCard-list {
-  margin-left: 30px;
-  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 55px;
 }
 
 .packageCard-img {
@@ -81,22 +66,28 @@ button:hover {
   width: 321px;
 }
 
-.packageCard-body{
+.packageCard-body {
   font-family: "Inter", sans-serif;
   padding: 20px 10px 20px 29px;
-  
+}
+.packageCard-body h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.packageCard-body h6 {
+  color: gray;
+}
+
+.packageCard-button {
+  background-color: #ffffff;
+  border: none;
+  color: #4f46e5;
+  width: 99px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 14px;
+  &:hover {
+    background-color: #dfddf9;
   }
-.packageCard-body h2{
-font-size: 20px;
-font-weight: 600;
-
-}
-
-.packageCard-body-desc{
-  font-size: 14px; 
-}
-
-
-.packageCard-body h6{
-  color:gray;
 }
