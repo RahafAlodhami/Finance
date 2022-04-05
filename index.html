@@ -1,61 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Cards</title>
-  </head>
 
-  <body>
-    <section class="packageCard-wrapper">
-      <div class="packageCard-wrapper-header">
-        <h2 class="packageCard-wrapper-subtitle">User Interface</h2>
-        <h1 class="packageCard-wrapper-title">Cards</h1>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/1687c38c70.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800;600;700&display=swap" rel="stylesheet" />
+  <title>Finance</title>
+</head>
 
-      <div class="packageCard-wrapper-body">
-        <div class="packageCard-filters">
-          <button type="button" class="packageCard-filters-button1">
-            All (68)
-          </button>
+<body>
+  <section class="packageFinance-wrapper">
+    <div class="packageFinance-wrapper-header">
+      <div class="packageFinance-header">
+        <h2 class="packageFinance-wrapper-title">Finance dashboard</h2>
+        <div class="packageFinance-wrapper-subtitle">
+          <p>Keep track of your financial status</p>
         </div>
-        <div class="packageCard-list card">
-          <div class="packageCard">
-            <div class="packageCard-header">
-              <img
-                src="assets\images\cards\01-320x200.jpg"
-                class="packageCard-img  card-img-top"
-                alt="Rockey mountains"
-              />
+      </div>
+      <div class="packageFinance-wrapper-buttons">
+        <button type="button" class="packageFinance-wrapper-button is-first">
+          <i class="fa-solid fa-file packageFinance-wrapper-icon"></i>Reports
+        </button>
+        <button type="button" class="packageFinance-wrapper-button is seconed">
+          <i class="fa-solid fa-gear packageFinance-wrapper-icon"></i>
+          Settings
+        </button>
+
+        <button type="button" class="packageFinance-wrapper-button is-third">
+          <i class="fa-solid fa-download packageFinance-icon"></i>Export
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Custom Card - Start -->
+          <div class=" packageFinance is-current ">
+            <div class="packageFinance-head">
+              <div class="pakageFinance-align">
+                <h4 class="packageFinance-title">
+                  Previous Statement
+                </h4>
+                <h6 class="packageFinance-subTitle">
+                  Paid on March 20, 2022
+                </h6>
+              </div>
+              <!-- three dots button -->
+              <div class="btn-group">
+                <button type="button" class="threeDots  dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-ellipsis-vertical fa-lg packageFinance-threeDots"> </i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">View statement</a></li>
+                  <li><a class="dropdown-item" href="#">Spending breakdown</a></li>
+                  <li><a class="dropdown-item" href="#">Tax breakdown</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Print statement</a></li>
+                  <li><a class="dropdown-item" href="#">Email statement</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="packageFinance-body">
+              <div class="packageFinance-desc">
+                <h6 class="packageFinance-label">Card Limit</h6>
+                <p class="packageFinance-value">$34,500.00</p>
+              </div>
+              <div class="packageFinance-desc">
+                <h6 class="packageFinance-label">Spent</h6>
+                <p class="packageFinance-value">$27,221.21</p>
+              </div>
+              <div class="packageFinance-desc">
+                <h6 class="packageFinance-label">Minimum</h6>
+                <p class="packageFinance-value">$7,331.94</p>
+              </div>
             </div>
 
-            <div class="packageCard-body card-body">
-              <h2 class="packageCard-title">
-                Most beautiful and quite places to see
-              </h2>
 
-              <p class="packageCard-desc card-text">
-                From rocky mountains to crystal clear lakes, there are the
-                places you must see and enjoy.
-              </p>
+          </div>
+        </div>
+        <!-- Custom Card - End  -->
+
+        <div class="col-md-6">
+          <!-- Custom Card - Start -->
+          <div class=" packageFinance is-previous ">
+            <div class="packageFinance-head">
+              <div class="pakageFinance-align">
+                <h4 class="packageFinance-title">
+                  Current Statement
+                </h4>
+                <h6 class="packageFinance-subTitle">
+                  Must be paid before April 21, 2022
+                </h6>
+              </div>
+              <!-- three dots button -->
+              <div class="btn-group">
+                <button type="button" class="threeDots  dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-ellipsis-vertical fa-lg packageFinance-threeDots"> </i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">View statement</a></li>
+                  <li><a class="dropdown-item" href="#">Spending breakdown</a></li>
+                  <li><a class="dropdown-item" href="#">Tax breakdown</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Print statement</a></li>
+                  <li><a class="dropdown-item" href="#">Email statement</a></li>
+                </ul>
+              </div>
             </div>
+            <div class="packageFinance-body">
+              <div class="packageFinance-desc">
+                <h6 class="packageFinance-label">Card Limit</h6>
+                <p class="packageFinance-value">$34,500.00</p>
+              </div>
+              <div class="packageFinance-desc">
+                <h6 class="packageFinance-label">Spent</h6>
+                <p class="packageFinance-value">$39,819.41</p>
+              </div>
+              <div class="packageFinance-desc">
+                <h6 class="packageFinance-label">Minimum</h6>
+                <p class="packageFinance-value">$9,112.51</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-md-12">
+          <!-- Custom Card - Start -->
+          <div class=" packageFinance is-line ">
+            <div class="packageFinance-head">
+              <div class="pakageFinance-align">
+                <h4 class="packageFinance-title">
+                  Account Balance
+                </h4>
+                <h6 class="packageFinance-subTitle-large">
+                  Monthly balance growth and avg. monthly income
+                </h6>
+              </div>
+              <!-- three dots button -->
+              <div class="btn-group">
+                <button type="button" class=" dropdown months" data-bs-toggle="dropdown" aria-expanded="false">
+                  12 months
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">3 months</a></li>
+                  <li><a class="dropdown-item" href="#">6 months</a></li>
+                  <li><a class="dropdown-item" href="#">9 months</a></li>
+                  <li><a class="dropdown-item" href="#">12 months</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="packageFinance-body">
+              <div class="packageFinance-body-desc">
+                <p class="packageFinance-value ">38.33%</p>
+                <h6 class="packageFinance-label">Average Monthly Growth</h6>
+
+              </div>
+              <div class="packageFinance-desc">
+                <p class="packageFinance-value">$45,332.00</p>
+                <h6 class="packageFinance-label">Average Monthly Income</h6>
+
+              </div>
+
+            </div>
+
+
           </div>
         </div>
       </div>
-    </section>
+      <div class="col-md-12">
+        <!-- Custom Card - Start -->
+        <!-- Custom Card - End  -->
+      </div>
+      <div class="col-md-12">
+        <!-- Custom Card - Start -->
+        <!-- Custom Card - End  -->
+      </div>
+    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+
+    </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
