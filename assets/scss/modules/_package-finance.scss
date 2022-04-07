@@ -1,11 +1,9 @@
 .packageFinance {
-  padding: 5px;
   border-radius: 20px;
   margin-bottom: 30px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgb(0 0 0 / 15%);
   padding-left: 26px;
-  padding-top: 17px;
 
   &.is-current {
     background: #fff url("../images/true.svg") no-repeat calc(100% + 20px)
@@ -32,7 +30,7 @@
   &-subTitle {
     margin-bottom: 30px;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 16px;
     color: #64749a;
   }

@@ -26,6 +26,11 @@
   font-weight: 600;
 }
 
+.packageFinance-icon {
+  color: #64748b;
+  padding-right: 6px;
+}
+
 .packageFinance-wrapper-buttons {
   padding-right: 22px;
 }
@@ -42,6 +47,9 @@
   font-family: "Inter", sans-serif;
   font-weight: 500;
 }
+.packageFinance-wrapper-button:hover {
+  background-color: #dbe1eb;
+}
 
 .is-third {
   background-color: #4f46e5;
@@ -49,20 +57,6 @@
 }
 .is-third:hover {
   background-color: #433cbf;
-}
-
-button:hover {
-  background-color: #dbe1eb;
-}
-
-.packageFinance-wrapper-icon {
-  padding-right: 10px;
-  color: #64748b;
-}
-
-.packageFinance-icon {
-  padding-right: 10px;
-  color: #ffffff;
 }
 
 .packageFinance-wrapper-threeDots {
@@ -78,7 +72,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-top: 8px;
+  padding-top: 29px;
 }
 
 .packageFinance-title {
@@ -92,6 +86,12 @@ button:hover {
 .packageFinance-subTitle-large {
   font-size: 14px;
   color: #64749a;
+}
+
+.packageFinance-pargragh {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1e293b;
 }
 
 .threeDots {
@@ -124,17 +124,103 @@ button:hover {
 }
 
 .is-line {
-  background: #fff url("../images/line.svg") no-repeat calc(100% + 20px) calc(100% + 22px)/96px;
+  height: 328px;
+  background-image: url("../images/lines.PNG");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.packageFinance-cards {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.packageFinance-desc-value {
+  color: #1e293b;
+  font-size: 36px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.table-button {
+  background-color: #fff;
+  color: #1e293b;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  margin-bottom: 22px;
+  height: 39px;
+  min-width: 64px;
+  width: 180px;
+  font-size: 16px;
+}
+.table-button:hover {
+  background-color: #eaedf1;
+}
+
+.packageFinance-table-header {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.is-firstColumn {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.is-seconedColumn {
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.is-thirdColumn {
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.is-fourthColumn {
+  font-size: 14px;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.is-done {
+  font-size: 10px;
+  color: #166534;
+  font-weight: 800;
+  background-color: #bbf7d0;
+  border-radius: 25px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 1px 7px;
+}
+
+.is-waiting {
+  font-size: 10px;
+  color: #991b1b;
+  font-weight: 800;
+  background-color: #fecaca;
+  border-radius: 25px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 1px 7px;
 }
 
 .packageFinance {
-  padding: 5px;
   border-radius: 20px;
   margin-bottom: 30px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   padding-left: 26px;
-  padding-top: 17px;
 }
 .packageFinance.is-current {
   background: #fff url("../images/true.svg") no-repeat calc(100% + 20px) calc(100% + 22px)/96px;
@@ -151,7 +237,7 @@ button:hover {
 .packageFinance-subTitle {
   margin-bottom: 30px;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 16px;
   color: #64749a;
 }
@@ -171,4 +257,70 @@ button:hover {
   color: #1e293b;
   font-size: 24px;
   font-weight: 500;
+}
+
+.budgetCard {
+  display: flex;
+  padding-bottom: 20px;
+}
+.budgetCard-header {
+  flex-basis: 56px;
+  background-color: #fee2e2;
+  width: 60px;
+  height: 56px;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 12px 16px 11px;
+}
+.budgetCard-headerSaving {
+  flex-basis: 56px;
+  max-width: 56px;
+  background-color: #e0e7ff;
+  width: 55px;
+  height: 56px;
+  border-radius: 4px;
+  margin-right: 20px;
+  padding: 12px 16px 11px;
+}
+.budgetCard-headerLight {
+  flex-basis: 56px;
+  max-width: 56px;
+  background-color: #ccfbf1;
+  width: 60px;
+  height: 56px;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 12px 16px 11px;
+}
+.budgetCard-mainIcon {
+  height: 24px;
+}
+.budgetCard-body {
+  flex-grow: 1;
+}
+.budgetCard-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #64749a;
+}
+.budgetCard-value {
+  color: #1e293b;
+  font-size: 20px;
+}
+.budgetCard-progress {
+  height: 4px;
+  background-color: #fee2e2;
+}
+.budgetCard-progressBlue {
+  height: 4px;
+  background-color: #e0e7ff;
+}
+.budgetCard-footer {
+  flex-basis: 72px;
+  max-width: 72px;
+  display: flex;
+  padding: 55px 6px 0px;
+}
+.budgetCard-arrowIcon {
+  height: 16px;
 }/*# sourceMappingURL=style.css.map */
