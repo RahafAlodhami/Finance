@@ -1,8 +1,7 @@
 .rightside-wrapper {
   padding: 50px 0px 0px 50px;
 }
-.security-wrapper-header {
-}
+
 .security-header {
   font-family: "Inter", sans-serif;
   font-size: 24px;
@@ -23,26 +22,23 @@
   color: #64748B;
 }
 .form-input {
-  margin: 20px auto;
-  position: relative;
+  
+    margin: 5px auto;
+    position: relative;
 }
 input:focus {
   box-shadow: none;
   border: 1px solid #4f46e5;
 }
-.icon {
-  position: absolute;
-  left: 15px;
-  top: 0;
-  color: #94a3b8;
-  height: 147%;
-  display: flex;
-  align-items: center;
+.is-withInsideIcon .form-control{
+  padding-left: 44px;
 }
+
 .form-label{
   font-family: "Inter", sans-serif;
   font-size: 14px;
   color: #1e293b;
+  margin-top: 20px;
 }
 .passwordHelp{
   font-family: "Inter", sans-serif;
@@ -53,8 +49,11 @@ input:focus {
   border-top: 1px solid #e2e8f0;
  margin: 40px 40px 40px 0px;
 }
-.security-wrapper-body {
+.security-body{
+  display: flex;
+  margin-bottom: 12px;
 }
+
 .security-body-title{
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -66,8 +65,6 @@ input:focus {
   color: #64748B;
   padding-bottom: 19px;
 }
-.security-body {
-}
 .body-title{
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -78,12 +75,19 @@ input:focus {
   font-size: 13px;
   color: #64748B;
 }
-.security-lowerBody {
-}
 .Toggle {
-  margin-left: auto;
+  margin-left: 130px;
+  margin-top: 8px;
   display: flex;
 }
+
+.Toggle-sec{
+  margin-left: 130px;
+  margin-top: 8px;
+  display: flex;
+  padding-left: 78px;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -96,8 +100,8 @@ input:focus {
   height: 0;
 }
 .slider {
-  height: 20px;
-  width: 52px;
+  height: 17px;
+  width: 36px;
   display: flex;
   position: absolute;
   cursor: pointer;
@@ -111,8 +115,8 @@ input:focus {
 }
 .slider:before {
   content: "";
-  height: 18.5px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -128,7 +132,7 @@ input:focus + .slider {
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  transform: translateX(18px);
   background-color: #4f46e5;
 }
 .round {
