@@ -1,4 +1,3 @@
-
 .account-header {
   font-family: "Inter", sans-serif;
   font-size: 24px;
@@ -9,76 +8,65 @@
   padding-bottom: 24px;
 }
 .account-subHeader-head {
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    color: #1e293b;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #1e293b;
 }
 .account-subHeader-subHead {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    color: #64748B;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #64748b;
 }
-
-.account-input{
-    text-indent: 8px;
-    border-radius: 3px;
-    width: -webkit-fill-available;
-    height: 50px;
-    border: 1px solid #e2e8f0;
-    color: #5c6471;
- 
+.account-input {
+  text-indent: 8px;
+  border-radius: 3px;
+  width: -webkit-fill-available;
+  height: 50px;
+  border: 1px solid #e2e8f0;
+  color: #5c6471;
 }
-
-.form-control{
+.form-control {
   margin-right: 70px;
- 
 }
-
-.textArea{
+.textArea {
   width: 92%;
 }
-.account-select{
-    text-indent: 7px;
-    border-radius: 3px;
-    width: -webkit-fill-available;
-    height: 50px;
-    border: 1px solid #e2e8f0;
-    color: #5c6471;
+.account-select {
+  text-indent: 7px;
+  border-radius: 3px;
+  width: -webkit-fill-available;
+  height: 50px;
+  border: 1px solid #e2e8f0;
+  color: #5c6471;
 }
-
-.is-withInsideIcon .form-control{
-    padding-left: 44px;
-  }
-
-  .icon {
-    position: absolute;
-    left: 21px;
-    top: 17px;
-    color: #94a3b8;
-    display: flex;
-    align-items: center;
-  }
-
-  .about-help{
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    color: #94a3b8;  
-    padding-bottom: 30px;
-  }
-
-.text{
-    color:#8b98aa;
-    background-color: #f1f5f9;
+.is-withInsideIcon .form-control {
+  padding-left: 24px;
 }
-
-
+.icon {
+  position: absolute;
+  left: 19px;
+  top: 17px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+}
+.about-help {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #94a3b8;
+  padding-bottom: 30px;
+}
+.text {
+  color: #8b98aa;
+  background-color: #f1f5f9;
+}
 .account-body-title {
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    color: #1e293b;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #1e293b;
 }
 .account-body-subTitle {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    color: #64748B;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #64748b;
 }

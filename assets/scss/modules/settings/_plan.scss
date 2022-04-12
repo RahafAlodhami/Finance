@@ -1,0 +1,155 @@
+.plan-wrapper-body {
+  padding-right: 70px;
+}
+.plan-header {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #1e293b;
+  letter-spacing: -0.4px;
+  padding-bottom: 24px;
+}
+.plan-subHeader-head {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #1e293b;
+}
+.plan-subHeader-subHead {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #64748b;
+}
+.infoBody {
+  text-indent: 8px;
+  border-radius: 3px;
+  height: 70px;
+  border: 1px solid #2d5bdb;
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  width: 93%;
+  margin-bottom: 20px;
+}
+.info {
+  color: #1d4ed8;
+}
+.infoIcon {
+  position: relative;
+  right: 18px;
+  top: 19px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+}
+.infoText {
+  padding: 26px;
+}
+.radio-buttons {
+  width: 100%;
+  margin: 0 auto;
+}
+.custom-radio input {
+  display: none;
+}
+.radio-btn {
+  width: 219px;
+  height: 174px;
+  display: inline-block;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.radio-btn > i {
+  color: #ffffff;
+  background-color: #4f46e5;
+  position: absolute;
+  top: 10px;
+  left: 90%;
+  transform: translateX(-50%) scale(4);
+  border-radius: 50px;
+  padding: 3px;
+  font-size: 15px;
+  pointer-events: none;
+  opacity: 0;
+}
+.radio-btn .hobbies-icon {
+  width: 165px;
+  height: 93px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.radio-btn .hobbies-icon i {
+  color: #4f46e5;
+  line-height: 80px;
+  font-size: 60px;
+}
+.custom-radio input:checked + .radio-btn {
+  border: 3px solid #4f46e5;
+}
+.custom-radio input:checked + .radio-btn > i {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+.planCard {
+  display: flex;
+  padding-right: 38px;
+}
+.cardTitle {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #1e293b;
+  font-weight: 500;
+}
+.cardSubtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #64748b;
+  padding-bottom: 38px;
+  font-weight: 500;
+}
+.cardText {
+  display: -webkit-box;
+}
+.cardDate {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #64748b;
+  font-weight: 500;
+}
+.cardNumber {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #1e293b;
+  padding-right: 5px;
+  font-weight: 500;
+}
+.plan-body-title {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #1e293b;
+}
+.plan-body-subTitle {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #64748b;
+}
+.plan-input {
+  text-indent: 8px;
+  border-radius: 5px;
+  height: 50px;
+  border: 1px solid #e2e8f0;
+  color: #5c6471;
+}
+.plan-select {
+  text-indent: 7px;
+  border-radius: 5px;
+  width: -webkit-fill-available;
+  height: 50px;
+  border: 1px solid #e2e8f0;
+  color: #5c6471;
+}

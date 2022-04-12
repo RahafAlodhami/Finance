@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800;600;700;800&display=swap"
         rel="stylesheet" />
+    <!-- Line Awesome CDN Link -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     <title>Settings</title>
 </head>
-
 <body>
     <div class="row g-0">
         <!-- Start of leftside  -->
@@ -23,21 +24,18 @@
             <div class="leftside-wrapper">
                 <h1 class="leftside-wrapper-head"> Settings </h1>
                 <div class="d-flex align-items-start">
-                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-                        aria-orientation="vertical">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <!-- Start of ACCOUNT leftside  -->
                         <button class=" active settingsMenu-button" id="v-pills-account-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-account" type="button" role="tab" aria-controls="v-pills-account"
                             aria-selected="true">
-                            <div class="settingsMenu">
-                                <div class="settingsMenu-header">
-                                    <img src="/assets/images/account.svg" alt="account" class="settingsMenu-mainIcon">
-                                </div>
-                                <div class="settingsMenu-body">
-                                    <h6 class="settingsMenu-title">Account</h6>
-                                    <p class="settingsMenu-subTitle">Manage your public profile and private
-                                        information</p>
-                                </div>
+                            <div class="settingsMenu-header">
+                                <img src="/assets/images/account.svg" alt="account" class="settingsMenu-mainIcon">
+                            </div>
+                            <div class="settingsMenu-body">
+                                <h6 class="settingsMenu-title">Account</h6>
+                                <p class="settingsMenu-subTitle">Manage your public profile and private
+                                    information</p>
                             </div>
                         </button>
                         <!-- End of ACCOUNT leftside  -->
@@ -45,15 +43,13 @@
                         <button class=" settingsMenu-button" id="v-pills-security-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-security" type="button" role="tab" aria-controls="v-pills-security"
                             aria-selected="false">
-                            <div class=" settingsMenu">
-                                <div class="settingsMenu-header">
-                                    <img src="/assets/images/security.svg" alt="security" class="settingsMenu-mainIcon">
-                                </div>
-                                <div class="settingsMenu-body">
-                                    <h6 class="settingsMenu-title">Security</h6>
-                                    <p class="settingsMenu-subTitle">Manage your password and 2-step verification
-                                        preferences</p>
-                                </div>
+                            <div class="settingsMenu-header">
+                                <img src="/assets/images/security.svg" alt="security" class="settingsMenu-mainIcon">
+                            </div>
+                            <div class="settingsMenu-body">
+                                <h6 class="settingsMenu-title">Security</h6>
+                                <p class="settingsMenu-subTitle">Manage your password and 2-step verification
+                                    preferences</p>
                             </div>
                         </button>
                         <!-- End of Security leftside  -->
@@ -61,15 +57,13 @@
                         <button class="settingsMenu-button" id="v-pills-plan-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-plan" type="button" role="tab" aria-controls="v-pills-plan"
                             aria-selected="false">
-                            <div class="settingsMenu">
-                                <div class="settingsMenu-header">
-                                    <img src="/assets/images/plan.svg" alt="plan" class="settingsMenu-mainIcon">
-                                </div>
-                                <div class="settingsMenu-body">
-                                    <h6 class="settingsMenu-title">Plan & Billing</h6>
-                                    <p class="settingsMenu-subTitle">Manage your subscription plan, payment method
-                                        and billing information</p>
-                                </div>
+                            <div class="settingsMenu-header">
+                                <img src="/assets/images/plan.svg" alt="plan" class="settingsMenu-mainIcon">
+                            </div>
+                            <div class="settingsMenu-body">
+                                <h6 class="settingsMenu-title">Plan & Billing</h6>
+                                <p class="settingsMenu-subTitle">Manage your subscription plan, payment method
+                                    and billing information</p>
                             </div>
                         </button>
                         <!-- End of plan leftside  -->
@@ -77,16 +71,14 @@
                         <button class="settingsMenu-button" id="v-pills-notfication-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-notfication" type="button" role="tab"
                             aria-controls="v-pills-notfication" aria-selected="false">
-                            <div class="settingsMenu">
-                                <div class="settingsMenu-header">
-                                    <img src="/assets/images/notfications.svg" alt="notfications"
-                                        class="settingsMenu-mainIcon">
-                                </div>
-                                <div class="settingsMenu-body">
-                                    <h6 class="settingsMenu-title">Notifications</h6>
-                                    <p class="settingsMenu-subTitle">Manage when you'll be notified on which
-                                        channels</p>
-                                </div>
+                            <div class="settingsMenu-header">
+                                <img src="/assets/images/notfications.svg" alt="notfications"
+                                    class="settingsMenu-mainIcon">
+                            </div>
+                            <div class="settingsMenu-body">
+                                <h6 class="settingsMenu-title">Notifications</h6>
+                                <p class="settingsMenu-subTitle">Manage when you'll be notified on which
+                                    channels</p>
                             </div>
                         </button>
                         <!-- End of notfication leftside  -->
@@ -94,15 +86,13 @@
                         <button class="settingsMenu-button" id="v-pills-team-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-team" type="button" role="tab" aria-controls="v-pills-team"
                             aria-selected="false">
-                            <div class="settingsMenu">
-                                <div class="settingsMenu-header">
-                                    <img src="/assets/images/team.svg" alt="team" class="settingsMenu-mainIcon">
-                                </div>
-                                <div class="settingsMenu-body">
-                                    <h6 class="settingsMenu-title">Team</h6>
-                                    <p class="settingsMenu-subTitle">Manage your existing team and change
-                                        roles/permissions</p>
-                                </div>
+                            <div class="settingsMenu-header">
+                                <img src="/assets/images/team.svg" alt="team" class="settingsMenu-mainIcon">
+                            </div>
+                            <div class="settingsMenu-body">
+                                <h6 class="settingsMenu-title">Team</h6>
+                                <p class="settingsMenu-subTitle">Manage your existing team and change
+                                    roles/permissions</p>
                             </div>
                         </button>
                         <!-- End of team leftside  -->
@@ -297,11 +287,146 @@
                             <button type="button" class="save"> Save</button>
                         </div>
                     </div>
-                    <!-- End of Security -->
                 </div>
-                <div class="tab-pane fade show active" id="v-pills-plan" role="tabpanel"
-                    aria-labelledby="v-pills-plan-tab">
+                <!-- End of Security -->
+                <div class="tab-pane fade " id="v-pills-plan" role="tabpanel" aria-labelledby="v-pills-plan-tab">
                     <!-- START OF plan -->
+                    <div class="rightside-wrapper">
+                        <div class="plan-wrapper-header">
+                            <h5 class="plan-header">Plan & Billing</h5>
+                            <h6 class="plan-subHeader-head"> Change your plan </h6>
+                            <p class="plan-subHeader-subHead"> Upgrade or downgrade your current plan.
+                            </p>
+                        </div>
+                        <div class="infoBody is-withInsideIcon">
+                            <span class="infoIcon"><i class="fa-solid fa-circle-info fa-lg info icon"></i></i></span>
+                            <p class="infoText">Changing the plan will take effect immediately. You will be charged for
+                                the rest
+                                of the current month.</p>
+                        </div>
+                        <div class="planCard">
+                            <div class="radio-buttons">
+                                <label class="custom-radio">
+                                    <input type="radio" name="radio" checked />
+                                    <span class="radio-btn"><i class="las la-check"></i>
+                                        <div class="hobbies-icon">
+                                            <h5 class="cardTitle">BASIC</h5>
+                                            <h6 class="cardSubtitle ">Starter plan for individuals.</h6>
+                                            <span class="cardText">
+                                                <p class="cardNumber">$10 </p>
+                                                <p class="cardDate">/ month</p>
+                                            </span>
+                                        </div>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="radio-buttons">
+                                <label class="custom-radio">
+                                    <input type="radio" name="radio" />
+                                    <span class="radio-btn"><i class="las la-check"></i>
+                                        <div class="hobbies-icon">
+                                            <h5 class="cardTitle">TEAM</h5>
+                                            <h6 class="cardSubtitle  ">Collaborate up to 10 people.</h6>
+                                            <span class="cardText">
+                                                <p class="cardNumber">$20 </p>
+                                                <p class="cardDate">/ month</p>
+                                            </span>
+                                        </div>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="radio-buttons">
+                                <label class="custom-radio">
+                                    <input type="radio" name="radio" />
+                                    <span class="radio-btn"><i class="las la-check"></i>
+                                        <div class="hobbies-icon">
+                                            <h5 class="cardTitle">ENTERPRISE</h5>
+                                            <h6 class="cardSubtitle">For bigger businesses.</h6>
+                                            <span class="cardText">
+                                                <p class="cardNumber">$40 </p>
+                                                <p class="cardDate">/ month</p>
+                                            </span>
+                                        </div>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="plan-wrapper-body">
+                            <h6 class="plan-body-title">Payment Details</h6>
+                            <p class="plan-body-subTitle">Update your billing information. Make sure to set your
+                                location correctly as it could affect your tax rates.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form class="form">
+                                        <label class="input-label" for="fullName">Card holder </label>
+                                        <div class="form-input is-withInsideIcon">
+                                            <span class="icon"><i class="fa-solid fa-user "></i></span>
+                                            <input class="form-control plan-input" type="text" id="fullName"
+                                                name="fullName" value="Brian Hughes" />
+                                        </div>
+                                </div>
+                                <div class="col-6">
+                                    <form class="form">
+                                        <label for="inputcardNumber" class="form-label">Card number</label>
+                                        <div class="form-input is-withInsideIcon">
+                                            <span class="icon"><i class="fa-solid fa-credit-card"></i></span>
+                                            <input type="text " class="form-control plan-input" id="inputcardNumber">
+                                        </div>
+                                </div>
+                                <div class="col-3">
+                                    <label for="inputdate" class="form-label">Expiration date</label>
+                                    <div class="form-input is-withInsideIcon">
+                                        <span class="icon"><i class="fa-solid fa-calendar"></i></span>
+                                        <input type="text" class="form-control plan-input" id="inputdate"
+                                            placeholder="MM / YY">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <label for="inputPass" class="form-label">CVC / CVC2</label>
+                                    <div class="form-input is-withInsideIcon">
+                                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                                        <input type="text" class="form-control plan-input" id="inputPas">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="select" class="form-label">Country</label>
+                                    <div class="form-input is-withInsideIcon">
+                                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                                        <select class="form-select form-control  plan-select"
+                                            aria-label="Default select example">
+                                            <option selected>United states</option>
+                                            <option value="1">Canada</option>
+                                            <option value="2">Mexico</option>
+                                            <option value="3">France</option>
+                                            <option value="4">Germany</option>
+                                            <option value="5">Italy</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <form class="form">
+                                        <label for="inputPostal" class="form-label">ZIP / Postal code</label>
+                                        <div class="form-input is-withInsideIcon">
+                                            <span class="icon"><i class="fa-solid fa-hashtag"></i></span>
+                                            <input type="text " class="form-control plan-input" id="inputPostal">
+                                        </div>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="line"></div>
+                        <div class="footer">
+                            <button type="button" class="cancel"> Cancel</button>
+                            <button type="button" class="save"> Save</button>
+                        </div>
+                    </div>
+                    <!-- End OF plan -->
+                </div>
+                <div class="tab-pane fade" id="v-pills-notfication" role="tabpanel"
+                    aria-labelledby="v-pills-notfication-tab">
+                    <!-- START OF notfication-->
                     <div class="rightside-wrapper">
                         <div class="account-wrapper-header">
                             <h5 class="account-header">Account</h5>
@@ -416,254 +541,132 @@
                             </div>
                         </div>
                     </div>
+                    <!-- End of notfication- -->
                 </div>
-                <!-- End OF plan -->
-            </div>
-            <div class="tab-pane fade" id="v-pills-notfication" role="tabpanel"
-                aria-labelledby="v-pills-notfication-tab">
-                <!-- START OF notfication-->
-                <div class="rightside-wrapper">
-                    <div class="account-wrapper-header">
-                        <h5 class="account-header">Account</h5>
-                        <h6 class="account-subHeader-head"> Profile </h6>
-                        <p class="account-subHeader-subHead"> Following information is publicly displayed, be
-                            careful!
-                        </p>
-                    </div>
-                    <div class="row ">
-                        <div class="col-md-12">
-                            <form class="form">
-                                <label class="input-label" for="fullName">Name </label>
-                                <div class="form-input is-withInsideIcon">
-                                    <span class="icon"><i class="fa-solid fa-user "></i></span>
-                                    <input class="form-control account-input" type="text" id="fullName" name="fullName"
-                                        value="Brian Hughes" />
-                                </div>
+                <div class="tab-pane fade" id="v-pills- team" role="tabpanel" aria-labelledby="v-pills- team-tab">
+                    <!-- START OF team -->
+                    <div class="rightside-wrapper">
+                        <div class="account-wrapper-header">
+                            <h5 class="account-header">Account</h5>
+                            <h6 class="account-subHeader-head"> Profile </h6>
+                            <p class="account-subHeader-subHead"> Following information is publicly displayed, be
+                                careful!
+                            </p>
                         </div>
-                        <div class="col-md-12">
-                            <label class="form-label" for="inputUsername">Username</label>
-                            <div class="input-group">
-                                <div class="input-group-text text ">fusetheme.com/</div>
-                                <input type="text" class="form-control account-input" id="inputUsername" value="brianh">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <label for="inputTitle" class="form-label">Title</label>
-                            <div class="form-input is-withInsideIcon">
-                                <span class="icon"> <i class="fa-solid fa-briefcase"></i></span>
-                                <input type="text" class="form-control account-input " id="inputTitle"
-                                    value="Senior Frontend Developer">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <label for="inputCompany" class="form-label">Company</label>
-                            <div class="form-input is-withInsideIcon">
-                                <span class="icon"> <i class="fa-solid fa-building"></i></span>
-                                <input type="text" class="form-control  account-input" id="inputCompany"
-                                    value="YXZ Software">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <label for="exampleFormControlTextarea1" class="form-label">About</label>
-                            <textarea class="form-control textArea " id="exampleFormControlTextarea1"
-                                placeholder="Hey! This is Brian; husband, father and gamer. I'm mostly passionate about bleeding edge tech and chocolate! 🍫"
-                                rows="5"></textarea>
-                            <div class="about-help">
-                                Brief description for your profile. Basic HTML and Emoji are allowed. </div>
-                        </div>
-                    </div>
-                    </form>
-                    <div class="line"></div>
-                    <div class="account-wrapper-body">
-                        <h6 class="account-body-title">Personal Information</h6>
-                        <p class="account-body-subTitle">Communication details in case we want to connect with you.
-                            These will be kept private.
-                        </p>
-                        <div class="row">
-                            <div class="col-6">
+                        <div class="row ">
+                            <div class="col-md-12">
                                 <form class="form">
-                                    <label for="inputEmail" class="form-label">Email</label>
+                                    <label class="input-label" for="fullName">Name </label>
                                     <div class="form-input is-withInsideIcon">
-                                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                                        <input type="text " class="form-control account-input" id="inputEmail"
-                                            value="hughes.brian@mail.com">
+                                        <span class="icon"><i class="fa-solid fa-user "></i></span>
+                                        <input class="form-control account-input" type="text" id="fullName"
+                                            name="fullName" value="Brian Hughes" />
                                     </div>
                             </div>
+                            <div class="col-md-12">
+                                <label class="form-label" for="inputUsername">Username</label>
+                                <div class="input-group">
+                                    <div class="input-group-text text ">fusetheme.com/</div>
+                                    <input type="text" class="form-control account-input" id="inputUsername"
+                                        value="brianh">
+                                </div>
+                            </div>
                             <div class="col-6">
-                                <label for="inputPhone" class="form-label">Phone</label>
+                                <label for="inputTitle" class="form-label">Title</label>
                                 <div class="form-input is-withInsideIcon">
-                                    <span class="icon"><i class="fa-solid fa-phone"></i></span>
-                                    <input type="text" class="form-control account-input" id="inputPhone"
-                                        value="121-490-33-12">
+                                    <span class="icon"> <i class="fa-solid fa-briefcase"></i></span>
+                                    <input type="text" class="form-control account-input " id="inputTitle"
+                                        value="Senior Frontend Developer">
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <label for="select" class="form-label">Country</label>
+                            <div class="col-6">
+                                <label for="inputCompany" class="form-label">Company</label>
                                 <div class="form-input is-withInsideIcon">
-                                    <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-                                    <select class="form-select form-control  account-select"
-                                        aria-label="Default select example">
-                                        <option selected>United states</option>
-                                        <option value="1">Canada</option>
-                                        <option value="2">Mexico</option>
-                                        <option value="3">France</option>
-                                        <option value="4">Germany</option>
-                                        <option value="5">Italy</option>
-                                    </select>
+                                    <span class="icon"> <i class="fa-solid fa-building"></i></span>
+                                    <input type="text" class="form-control  account-input" id="inputCompany"
+                                        value="YXZ Software">
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <label for="select" class="form-label">Language</label>
-                                <div class="form-input is-withInsideIcon">
-                                    <span class="icon"> <i class="fa-solid fa-globe"></i></span>
-                                    <select class="form-select form-control  account-select"
-                                        aria-label="Default select example">
-                                        <option selected>English</option>
-                                        <option value="1">French</option>
-                                        <option value="2">Spanish</option>
-                                        <option value="4">German</option>
-                                        <option value="5">Italian</option>
-                                    </select>
-                                </div>
+                            <div class="col-12">
+                                <label for="exampleFormControlTextarea1" class="form-label">About</label>
+                                <textarea class="form-control textArea " id="exampleFormControlTextarea1"
+                                    placeholder="Hey! This is Brian; husband, father and gamer. I'm mostly passionate about bleeding edge tech and chocolate! 🍫"
+                                    rows="5"></textarea>
+                                <div class="about-help">
+                                    Brief description for your profile. Basic HTML and Emoji are allowed. </div>
                             </div>
                         </div>
                         </form>
                         <div class="line"></div>
-                        <div class="footer">
-                            <button type="button" class="cancel"> Cancel</button>
-                            <button type="button" class="save"> Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End of notfication- -->
-        </div>
-        <div class="tab-pane fade" id="v-pills- team" role="tabpanel" aria-labelledby="v-pills- team-tab">
-            <!-- START OF team -->
-            <div class="rightside-wrapper">
-                <div class="account-wrapper-header">
-                    <h5 class="account-header">Account</h5>
-                    <h6 class="account-subHeader-head"> Profile </h6>
-                    <p class="account-subHeader-subHead"> Following information is publicly displayed, be
-                        careful!
-                    </p>
-                </div>
-                <div class="row ">
-                    <div class="col-md-12">
-                        <form class="form">
-                            <label class="input-label" for="fullName">Name </label>
-                            <div class="form-input is-withInsideIcon">
-                                <span class="icon"><i class="fa-solid fa-user "></i></span>
-                                <input class="form-control account-input" type="text" id="fullName" name="fullName"
-                                    value="Brian Hughes" />
-                            </div>
-                    </div>
-                    <div class="col-md-12">
-                        <label class="form-label" for="inputUsername">Username</label>
-                        <div class="input-group">
-                            <div class="input-group-text text ">fusetheme.com/</div>
-                            <input type="text" class="form-control account-input" id="inputUsername" value="brianh">
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <label for="inputTitle" class="form-label">Title</label>
-                        <div class="form-input is-withInsideIcon">
-                            <span class="icon"> <i class="fa-solid fa-briefcase"></i></span>
-                            <input type="text" class="form-control account-input " id="inputTitle"
-                                value="Senior Frontend Developer">
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <label for="inputCompany" class="form-label">Company</label>
-                        <div class="form-input is-withInsideIcon">
-                            <span class="icon"> <i class="fa-solid fa-building"></i></span>
-                            <input type="text" class="form-control  account-input" id="inputCompany"
-                                value="YXZ Software">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <label for="exampleFormControlTextarea1" class="form-label">About</label>
-                        <textarea class="form-control textArea " id="exampleFormControlTextarea1"
-                            placeholder="Hey! This is Brian; husband, father and gamer. I'm mostly passionate about bleeding edge tech and chocolate! 🍫"
-                            rows="5"></textarea>
-                        <div class="about-help">
-                            Brief description for your profile. Basic HTML and Emoji are allowed. </div>
-                    </div>
-                </div>
-                </form>
-                <div class="line"></div>
-                <div class="account-wrapper-body">
-                    <h6 class="account-body-title">Personal Information</h6>
-                    <p class="account-body-subTitle">Communication details in case we want to connect with you.
-                        These will be kept private.
-                    </p>
-                    <div class="row">
-                        <div class="col-6">
-                            <form class="form">
-                                <label for="inputEmail" class="form-label">Email</label>
-                                <div class="form-input is-withInsideIcon">
-                                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                                    <input type="text " class="form-control account-input" id="inputEmail"
-                                        value="hughes.brian@mail.com">
+                        <div class="account-wrapper-body">
+                            <h6 class="account-body-title">Personal Information</h6>
+                            <p class="account-body-subTitle">Communication details in case we want to connect with you.
+                                These will be kept private.
+                            </p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <form class="form">
+                                        <label for="inputEmail" class="form-label">Email</label>
+                                        <div class="form-input is-withInsideIcon">
+                                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                                            <input type="text " class="form-control account-input" id="inputEmail"
+                                                value="hughes.brian@mail.com">
+                                        </div>
                                 </div>
-                        </div>
-                        <div class="col-6">
-                            <label for="inputPhone" class="form-label">Phone</label>
-                            <div class="form-input is-withInsideIcon">
-                                <span class="icon"><i class="fa-solid fa-phone"></i></span>
-                                <input type="text" class="form-control account-input" id="inputPhone"
-                                    value="121-490-33-12">
+                                <div class="col-6">
+                                    <label for="inputPhone" class="form-label">Phone</label>
+                                    <div class="form-input is-withInsideIcon">
+                                        <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                                        <input type="text" class="form-control account-input" id="inputPhone"
+                                            value="121-490-33-12">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="select" class="form-label">Country</label>
+                                    <div class="form-input is-withInsideIcon">
+                                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                                        <select class="form-select form-control  account-select"
+                                            aria-label="Default select example">
+                                            <option selected>United states</option>
+                                            <option value="1">Canada</option>
+                                            <option value="2">Mexico</option>
+                                            <option value="3">France</option>
+                                            <option value="4">Germany</option>
+                                            <option value="5">Italy</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="select" class="form-label">Language</label>
+                                    <div class="form-input is-withInsideIcon">
+                                        <span class="icon"> <i class="fa-solid fa-globe"></i></span>
+                                        <select class="form-select form-control  account-select"
+                                            aria-label="Default select example">
+                                            <option selected>English</option>
+                                            <option value="1">French</option>
+                                            <option value="2">Spanish</option>
+                                            <option value="4">German</option>
+                                            <option value="5">Italian</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="select" class="form-label">Country</label>
-                            <div class="form-input is-withInsideIcon">
-                                <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-                                <select class="form-select form-control  account-select"
-                                    aria-label="Default select example">
-                                    <option selected>United states</option>
-                                    <option value="1">Canada</option>
-                                    <option value="2">Mexico</option>
-                                    <option value="3">France</option>
-                                    <option value="4">Germany</option>
-                                    <option value="5">Italy</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="select" class="form-label">Language</label>
-                            <div class="form-input is-withInsideIcon">
-                                <span class="icon"> <i class="fa-solid fa-globe"></i></span>
-                                <select class="form-select form-control  account-select"
-                                    aria-label="Default select example">
-                                    <option selected>English</option>
-                                    <option value="1">French</option>
-                                    <option value="2">Spanish</option>
-                                    <option value="4">German</option>
-                                    <option value="5">Italian</option>
-                                </select>
+                            </form>
+                            <div class="line"></div>
+                            <div class="footer">
+                                <button type="button" class="cancel"> Cancel</button>
+                                <button type="button" class="save"> Save</button>
                             </div>
                         </div>
                     </div>
-                    </form>
-                    <div class="line"></div>
-                    <div class="footer">
-                        <button type="button" class="cancel"> Cancel</button>
-                        <button type="button" class="save"> Save</button>
-                    </div>
+                    <!-- End of  team -->
                 </div>
             </div>
         </div>
-        <!-- End of  team -->
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
     <!-- End of rightside -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

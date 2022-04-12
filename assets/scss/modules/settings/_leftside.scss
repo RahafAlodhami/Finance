@@ -1,6 +1,4 @@
-.leftside-wrapper {
-  
-}
+
 .leftside-wrapper-head {
   font-family: "Inter", sans-serif;
   font-size: 32px;
@@ -10,12 +8,17 @@
   letter-spacing: -0.4px;
   padding: 35px 40px ;
 }
+ .settingsMenu-header{
+  flex-basis: 50px;
+}
 
-.settingsMenu {
-  display: flex;
-  flex-wrap: wrap;
+.settingsMenu-body{
+  flex-basis: calc(100% - 50px);
+    text-align: left;
 }
 .settingsMenu-button {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #fff;
   border: none;
   padding: 20px 40px;
@@ -26,21 +29,20 @@
 }
 .settingsMenu-mainIcon {
   width: 24px;
-  padding-top: 20px;
-}
 
+}
 .settingsMenu-title {
   font-family: "Inter", sans-serif;
   line-height: 24px;
   font-weight: 500;
   font-size: 14px;
   color: #1e293b;
-  float: left;
+
 }
 .settingsMenu-subTitle {
   font-family: "Inter", sans-serif;
   line-height: inherit;
   font-size: 14px;
   color: #64748b;
-  float: left;
+
 }

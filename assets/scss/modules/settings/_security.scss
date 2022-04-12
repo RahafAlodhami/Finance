@@ -1,7 +1,6 @@
 .rightside-wrapper {
   padding: 50px 0px 0px 50px;
 }
-
 .security-header {
   font-family: "Inter", sans-serif;
   font-size: 24px;
@@ -19,75 +18,70 @@
 .security-subHeader-subHead {
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  color: #64748B;
+  color: #64748b;
 }
 .form-input {
-  
-    margin: 5px auto;
-    position: relative;
+  margin: 5px auto;
+  position: relative;
 }
 input:focus {
   box-shadow: none;
   border: 1px solid #4f46e5;
 }
-.is-withInsideIcon .form-control{
-  padding-left: 44px;
+.is-withInsideIcon .form-control {
+  padding-left: 40px;
 }
-
-.form-label{
+.form-label {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   color: #1e293b;
   margin-top: 20px;
 }
-.passwordHelp{
+.passwordHelp {
   font-family: "Inter", sans-serif;
   font-size: 13px;
   color: #94a3b8;
 }
-.line{
+.line {
   border-top: 1px solid #e2e8f0;
- margin: 40px 40px 40px 0px;
+  margin: 40px 40px 40px 0px;
 }
-.security-body{
+.security-body {
   display: flex;
   margin-bottom: 12px;
 }
-
-.security-body-title{
+.security-body-title {
   font-family: "Inter", sans-serif;
   font-size: 18px;
   color: #1e293b;
 }
-.security-body-subTitle{
+.security-body-subTitle {
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  color: #64748B;
+  color: #64748b;
   padding-bottom: 19px;
 }
-.body-title{
+.body-title {
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  color: #1e293b; 
+  color: #1e293b;
 }
-.body-subTitle{
+.body-subTitle {
   font-family: "Inter", sans-serif;
   font-size: 13px;
-  color: #64748B;
+  color: #64748b;
 }
 .Toggle {
   margin-left: 130px;
   margin-top: 8px;
   display: flex;
 }
-
-.Toggle-sec{
+.Toggle-sec {
   margin-left: 130px;
   margin-top: 8px;
   display: flex;
   padding-left: 78px;
 }
-
 .switch {
   position: relative;
   display: inline-block;
