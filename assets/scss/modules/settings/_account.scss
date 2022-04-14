@@ -6,6 +6,10 @@
   color: #1e293b;
   letter-spacing: -0.4px;
   padding-bottom: 24px;
+  background-color: red;
+  // @include media-breakpoint-down(md){
+  //   background-color: blue;
+  // }
 }
 .account-subHeader-head {
   font-family: "Inter", sans-serif;

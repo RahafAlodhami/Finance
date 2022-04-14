@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <script src="https://kit.fontawesome.com/1687c38c70.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/1687c38c70.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800;600;700;800&display=swap"
@@ -17,6 +16,7 @@
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     <title>Settings</title>
 </head>
+
 <body>
     <div class="row g-0">
         <!-- Start of leftside  -->
@@ -39,7 +39,7 @@
                             </div>
                         </button>
                         <!-- End of ACCOUNT leftside  -->
-                        <!-- Start of Security leftside  -->
+                        <!-- Start of security leftside  -->
                         <button class=" settingsMenu-button" id="v-pills-security-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-security" type="button" role="tab" aria-controls="v-pills-security"
                             aria-selected="false">
@@ -428,121 +428,107 @@
                     aria-labelledby="v-pills-notfication-tab">
                     <!-- START OF notfication-->
                     <div class="rightside-wrapper">
-                        <div class="account-wrapper-header">
-                            <h5 class="account-header">Account</h5>
-                            <h6 class="account-subHeader-head"> Profile </h6>
-                            <p class="account-subHeader-subHead"> Following information is publicly displayed, be
-                                careful!
-                            </p>
+                        <div class="notifications-wrapper-header">
+                            <h4 class="notifications-header">Notifications</h4>
                         </div>
-                        <div class="row ">
-                            <div class="col-md-12">
-                                <form class="form">
-                                    <label class="input-label" for="fullName">Name </label>
-                                    <div class="form-input is-withInsideIcon">
-                                        <span class="icon"><i class="fa-solid fa-user "></i></span>
-                                        <input class="form-control account-input" type="text" id="fullName"
-                                            name="fullName" value="Brian Hughes" />
-                                    </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label class="form-label" for="inputUsername">Username</label>
-                                <div class="input-group">
-                                    <div class="input-group-text text ">fusetheme.com/</div>
-                                    <input type="text" class="form-control account-input" id="inputUsername"
-                                        value="brianh">
+                        <h5 class="notifications-head"> Alerts</h5>
+                        <div class="notifications-wrapper-body">
+                            <div class="notifications-body">
+                                <div class="notifications-toglle">
+                                    <h6 class="body-title">Communication</h6>
+                                    <p class="body-subTitle">Get news, announcements, and product updates. </p>
+                                </div>
+                                <div class="ToggleA">
+                                    <label class="switch">
+                                        <input type="checkbox" checked />
+                                        <span class="slider round"></span>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <label for="inputTitle" class="form-label">Title</label>
-                                <div class="form-input is-withInsideIcon">
-                                    <span class="icon"> <i class="fa-solid fa-briefcase"></i></span>
-                                    <input type="text" class="form-control account-input " id="inputTitle"
-                                        value="Senior Frontend Developer">
+                            <div class="notifications-body">
+                                <div class="notifications-toglle">
+                                    <h6 class="body-title">Security</h6>
+                                    <p class="body-subTitle">Get important notifications about your account security.
+                                    </p>
+                                </div>
+                                <div class="ToggleB">
+                                    <label class="switch">
+                                        <input type="checkbox" checked />
+                                        <span class="slider round"></span>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <label for="inputCompany" class="form-label">Company</label>
-                                <div class="form-input is-withInsideIcon">
-                                    <span class="icon"> <i class="fa-solid fa-building"></i></span>
-                                    <input type="text" class="form-control  account-input" id="inputCompany"
-                                        value="YXZ Software">
+                            <div class="notifications-body">
+                                <div class="notifications-toglle">
+                                    <h6 class="body-title">Meetups</h6>
+                                    <p class="body-subTitle">Get an email when a Meetup is posted close to my location.
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <label for="exampleFormControlTextarea1" class="form-label">About</label>
-                                <textarea class="form-control textArea " id="exampleFormControlTextarea1"
-                                    placeholder="Hey! This is Brian; husband, father and gamer. I'm mostly passionate about bleeding edge tech and chocolate! 🍫"
-                                    rows="5"></textarea>
-                                <div class="about-help">
-                                    Brief description for your profile. Basic HTML and Emoji are allowed. </div>
+                                <div class="ToggleC">
+                                    <label class="switch">
+                                        <input type="checkbox" checked />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                        </form>
                         <div class="line"></div>
-                        <div class="account-wrapper-body">
-                            <h6 class="account-body-title">Personal Information</h6>
-                            <p class="account-body-subTitle">Communication details in case we want to connect with you.
-                                These will be kept private.
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <form class="form">
-                                        <label for="inputEmail" class="form-label">Email</label>
-                                        <div class="form-input is-withInsideIcon">
-                                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                                            <input type="text " class="form-control account-input" id="inputEmail"
-                                                value="hughes.brian@mail.com">
-                                        </div>
+                        <h5 class="notifications-head"> Account Activity</h5>
+                        <p class="notifications-subHead">Email me when:</p>
+                        <div class="notifications-wrapper-body">
+                            <div class="notifications-body">
+                                <div class="notifications-toglle">
+                                    <p class="notifications-body-subTitle">someone comments on one of my items </p>
                                 </div>
-                                <div class="col-6">
-                                    <label for="inputPhone" class="form-label">Phone</label>
-                                    <div class="form-input is-withInsideIcon">
-                                        <span class="icon"><i class="fa-solid fa-phone"></i></span>
-                                        <input type="text" class="form-control account-input" id="inputPhone"
-                                            value="121-490-33-12">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="select" class="form-label">Country</label>
-                                    <div class="form-input is-withInsideIcon">
-                                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-                                        <select class="form-select form-control  account-select"
-                                            aria-label="Default select example">
-                                            <option selected>United states</option>
-                                            <option value="1">Canada</option>
-                                            <option value="2">Mexico</option>
-                                            <option value="3">France</option>
-                                            <option value="4">Germany</option>
-                                            <option value="5">Italy</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="select" class="form-label">Language</label>
-                                    <div class="form-input is-withInsideIcon">
-                                        <span class="icon"> <i class="fa-solid fa-globe"></i></span>
-                                        <select class="form-select form-control  account-select"
-                                            aria-label="Default select example">
-                                            <option selected>English</option>
-                                            <option value="1">French</option>
-                                            <option value="2">Spanish</option>
-                                            <option value="4">German</option>
-                                            <option value="5">Italian</option>
-                                        </select>
-                                    </div>
+                                <div class="ToggleD">
+                                    <label class="switch">
+                                        <input type="checkbox" checked />
+                                        <span class="slider round"></span>
+                                    </label>
                                 </div>
                             </div>
-                            </form>
-                            <div class="line"></div>
-                            <div class="footer">
-                                <button type="button" class="cancel"> Cancel</button>
-                                <button type="button" class="save"> Save</button>
+                            <div class="notifications-body">
+                                <div class="notifications-toglle">
+                                    <p class="notifications-body-subTitle">someone mentions me </p>
+                                </div>
+                                <div class="ToggleE">
+                                    <label class="switch">
+                                        <input type="checkbox" checked />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
                             </div>
+                            <div class="notifications-body">
+                                <div class="notifications-toglle">
+                                    <p class="notifications-body-subTitle">someone follows me </p>
+                                </div>
+                                <div class="ToggleF">
+                                    <label class="switch">
+                                        <input type="checkbox" checked />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="notifications-body">
+                                <div class="notifications-toglle">
+                                    <p class="notifications-body-subTitle">someone replies to my job posting </p>
+                                </div>
+                                <div class="ToggleG">
+                                    <label class="switch">
+                                        <input type="checkbox" checked />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="footer">
+                            <button type="button" class="cancel"> Cancel</button>
+                            <button type="button" class="save"> Save</button>
                         </div>
                     </div>
-                    <!-- End of notfication- -->
                 </div>
+                <!-- End of notifications- -->
                 <div class="tab-pane fade" id="v-pills- team" role="tabpanel" aria-labelledby="v-pills- team-tab">
                     <!-- START OF team -->
                     <div class="rightside-wrapper">
@@ -669,4 +655,5 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
