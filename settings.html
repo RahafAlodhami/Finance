@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/1687c38c70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800;600;700;800&display=swap"
@@ -30,7 +32,7 @@
                             data-bs-target="#v-pills-account" type="button" role="tab" aria-controls="v-pills-account"
                             aria-selected="true">
                             <div class="settingsMenu-header">
-                                <img src="/assets/images/account.svg" alt="account" class="settingsMenu-mainIcon">
+                                <img src="/assets/images/account.svg" alt="account" class="settingsMenu-mainIcon ">
                             </div>
                             <div class="settingsMenu-body">
                                 <h6 class="settingsMenu-title">Account</h6>
@@ -529,124 +531,228 @@
                     </div>
                 </div>
                 <!-- End of notifications- -->
-                <div class="tab-pane fade" id="v-pills- team" role="tabpanel" aria-labelledby="v-pills- team-tab">
-                    <!-- START OF team -->
+                <!-- START OF team -->
+                <div class="tab-pane fade" id="v-pills-team" role="tabpanel" aria-labelledby="v-pills-team-tab">
                     <div class="rightside-wrapper">
-                        <div class="account-wrapper-header">
-                            <h5 class="account-header">Account</h5>
-                            <h6 class="account-subHeader-head"> Profile </h6>
-                            <p class="account-subHeader-subHead"> Following information is publicly displayed, be
-                                careful!
-                            </p>
+                        <div class="team-wrapper-header">
+                            <h4 class="team-header">Team</h4>
                         </div>
-                        <div class="row ">
-                            <div class="col-md-12">
-                                <form class="form">
-                                    <label class="input-label" for="fullName">Name </label>
-                                    <div class="form-input is-withInsideIcon">
-                                        <span class="icon"><i class="fa-solid fa-user "></i></span>
-                                        <input class="form-control account-input" type="text" id="fullName"
-                                            name="fullName" value="Brian Hughes" />
-                                    </div>
+                        <div class="team-add">
+                            <h6 class="add">Add team members </h6>
+                            <span class="team-icon"><i class="fa-solid fa-user "></i></span>
+                            <button type="button" class=" plus" aria-expanded="false">
+                                <i class="fa-solid fa-circle-plus fa-lg color"> </i>
+                            </button>
+                            <input class="form-control team-input" type="text" id="fullName" name="fullName"
+                                placeholder="Email address" />
+                        </div>
+                        <div class="team-line"></div>
+                        <!-- Start of List -->
+                        <div class="team-body-wrapper">
+                            <div class="team-header">
+                                <img src="/assets/images/male-01.jpg" alt="account" class="team-mainIcon-pic ">
                             </div>
-                            <div class="col-md-12">
-                                <label class="form-label" for="inputUsername">Username</label>
-                                <div class="input-group">
-                                    <div class="input-group-text text ">fusetheme.com/</div>
-                                    <input type="text" class="form-control account-input" id="inputUsername"
-                                        value="brianh">
-                                </div>
+                            <div class="team-body">
+                                <h6 class="team-title">Dejesus Michael</h6>
+                                <p class="team-subTitle">dejesusmichael@mail.org</p>
                             </div>
-                            <div class="col-6">
-                                <label for="inputTitle" class="form-label">Title</label>
-                                <div class="form-input is-withInsideIcon">
-                                    <span class="icon"> <i class="fa-solid fa-briefcase"></i></span>
-                                    <input type="text" class="form-control account-input " id="inputTitle"
-                                        value="Senior Frontend Developer">
-                                </div>
+                            <div class="team-input-body">
+                                <select class=" team-control  team-select" aria-label="Default select example ">
+                                    <option selected> Role:<h6 class="selectHead">Admin </h6>
+                                        <p class="selectBody">
+                                            Can read, clone, and push to this repository. Can also manage issues,
+                                            pull requests, and repository settings, including adding collaborators.
+                                        </p>
+                                    </option>
+                                    <option value="1">Role: <h6 class="selectHead">Read </h6>
+                                        <p class="selectBody">
+                                            Can read and clone this repository. Can also open and comment on issues
+                                            and pull requests. </p>
+                                    </option>
+                                    <option value="2">Role:<h6 class="selectHead">Write </h6>
+                                        <p class="selectBody"> Can read, clone, and push to this repository. Can
+                                            also manage issues and pull requests.</p>
+                                    </option>
+                                </select>
                             </div>
-                            <div class="col-6">
-                                <label for="inputCompany" class="form-label">Company</label>
-                                <div class="form-input is-withInsideIcon">
-                                    <span class="icon"> <i class="fa-solid fa-building"></i></span>
-                                    <input type="text" class="form-control  account-input" id="inputCompany"
-                                        value="YXZ Software">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <label for="exampleFormControlTextarea1" class="form-label">About</label>
-                                <textarea class="form-control textArea " id="exampleFormControlTextarea1"
-                                    placeholder="Hey! This is Brian; husband, father and gamer. I'm mostly passionate about bleeding edge tech and chocolate! 🍫"
-                                    rows="5"></textarea>
-                                <div class="about-help">
-                                    Brief description for your profile. Basic HTML and Emoji are allowed. </div>
+                            <div class="team-body-icon">
+                                <img src="/assets/images/trash.svg" alt="trash" class="team-mainIcon ">
                             </div>
                         </div>
-                        </form>
-                        <div class="line"></div>
-                        <div class="account-wrapper-body">
-                            <h6 class="account-body-title">Personal Information</h6>
-                            <p class="account-body-subTitle">Communication details in case we want to connect with you.
-                                These will be kept private.
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <form class="form">
-                                        <label for="inputEmail" class="form-label">Email</label>
-                                        <div class="form-input is-withInsideIcon">
-                                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                                            <input type="text " class="form-control account-input" id="inputEmail"
-                                                value="hughes.brian@mail.com">
-                                        </div>
-                                </div>
-                                <div class="col-6">
-                                    <label for="inputPhone" class="form-label">Phone</label>
-                                    <div class="form-input is-withInsideIcon">
-                                        <span class="icon"><i class="fa-solid fa-phone"></i></span>
-                                        <input type="text" class="form-control account-input" id="inputPhone"
-                                            value="121-490-33-12">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="select" class="form-label">Country</label>
-                                    <div class="form-input is-withInsideIcon">
-                                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-                                        <select class="form-select form-control  account-select"
-                                            aria-label="Default select example">
-                                            <option selected>United states</option>
-                                            <option value="1">Canada</option>
-                                            <option value="2">Mexico</option>
-                                            <option value="3">France</option>
-                                            <option value="4">Germany</option>
-                                            <option value="5">Italy</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="select" class="form-label">Language</label>
-                                    <div class="form-input is-withInsideIcon">
-                                        <span class="icon"> <i class="fa-solid fa-globe"></i></span>
-                                        <select class="form-select form-control  account-select"
-                                            aria-label="Default select example">
-                                            <option selected>English</option>
-                                            <option value="1">French</option>
-                                            <option value="2">Spanish</option>
-                                            <option value="4">German</option>
-                                            <option value="5">Italian</option>
-                                        </select>
-                                    </div>
-                                </div>
+                        <div class="team-line"></div>
+                        <div class="team-body-wrapper">
+                            <div class="team-header">
+                                <img src="/assets/images/female-02.jpg" alt="account" class="team-mainIcon-pic ">
                             </div>
-                            </form>
-                            <div class="line"></div>
-                            <div class="footer">
-                                <button type="button" class="cancel"> Cancel</button>
-                                <button type="button" class="save"> Save</button>
+                            <div class="team-body">
+                                <h6 class="team-title">Dejesus Michael</h6>
+                                <p class="team-subTitle">dejesusmichael@mail.org</p>
+                            </div>
+                            <div class="team-input-body">
+                                <select class=" team-control  team-select" aria-label="Default select example ">
+                                    <option selected> Role:<h6 class="selectHead">Admin </h6>
+                                        <span class="team-Dropdown">
+                                            <p class="droppragragh">
+                                                Can read, clone, and push to this repository. Can also manage issues,
+                                                pull requests, and repository settings, including adding collaborators.
+                                            </p>
+                                        </span>
+                                    </option>
+                                    <option value="1">Role: <h6 class="selectHead">Read </h6>
+                                        <p class="selectBody">
+                                            Can read and clone this repository. Can also open and comment on issues
+                                            and pull requests. </p>
+                                    </option>
+                                    <option value="2">Role:<h6 class="selectHead">Write </h6>
+                                        <p class="selectBody"> Can read, clone, and push to this repository. Can
+                                            also manage issues and pull requests.</p>
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="team-body-icon">
+                                <img src="/assets/images/trash.svg" alt="trash" class="team-mainIcon ">
+                            </div>
+                        </div>
+                        <div class="team-line"></div>
+                        <div class="team-body-wrapper">
+                            <div class="team-header">
+                                <img src="/assets/images/female-03.jpg" alt="account" class="team-mainIcon-pic ">
+                            </div>
+                            <div class="team-body">
+                                <h6 class="team-title">Dejesus Michael</h6>
+                                <p class="team-subTitle">dejesusmichael@mail.org</p>
+                            </div>
+                            <div class="team-input-body">
+                                <select class=" team-control  team-select" aria-label="Default select example ">
+                                    <option selected> Role:<h6 class="selectHead">Admin </h6>
+                                        <span class="team-Dropdown">
+                                            <p class="droppragragh">
+                                                Can read, clone, and push to this repository. Can also manage issues,
+                                                pull requests, and repository settings, including adding collaborators.
+                                            </p>
+                                        </span>
+                                    </option>
+                                    <option value="1">Role: <h6 class="selectHead">Read </h6>
+                                        <p class="selectBody">
+                                            Can read and clone this repository. Can also open and comment on issues
+                                            and pull requests. </p>
+                                    </option>
+                                    <option value="2">Role:<h6 class="selectHead">Write </h6>
+                                        <p class="selectBody"> Can read, clone, and push to this repository. Can
+                                            also manage issues and pull requests.</p>
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="team-body-icon">
+                                <img src="/assets/images/trash.svg" alt="trash" class="team-mainIcon ">
+                            </div>
+                        </div>
+                        <div class="team-line"></div>
+                        <div class="team-body-wrapper">
+                            <div class="team-header">
+                                <img src="/assets/images/male-07.jpg" alt="account" class="team-mainIcon-pic ">
+                            </div>
+                            <div class="team-body">
+                                <h6 class="team-title">Dejesus Michael</h6>
+                                <p class="team-subTitle">dejesusmichael@mail.org</p>
+                            </div>
+                            <div class="team-input-body">
+                                <select class=" team-control  team-select" aria-label="Default select example ">
+                                    <option selected> Role:<h6 class="selectHead">Admin </h6>
+                                        <span class="team-Dropdown">
+                                            <p class="droppragragh">
+                                                Can read, clone, and push to this repository. Can also manage issues,
+                                                pull requests, and repository settings, including adding collaborators.
+                                            </p>
+                                        </span>
+                                    </option>
+                                    <option value="1">Role: <h6 class="selectHead">Read </h6>
+                                        <p class="selectBody">
+                                            Can read and clone this repository. Can also open and comment on issues
+                                            and pull requests. </p>
+                                    </option>
+                                    <option value="2">Role:<h6 class="selectHead">Write </h6>
+                                        <p class="selectBody"> Can read, clone, and push to this repository. Can
+                                            also manage issues and pull requests.</p>
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="team-body-icon">
+                                <img src="/assets/images/trash.svg" alt="trash" class="team-mainIcon ">
+                            </div>
+                        </div>
+                        <div class="team-line"></div>
+                        <div class="team-body-wrapper">
+                            <div class="team-header">
+                                <img src="/assets/images/male-08.jpg" alt="account" class="team-mainIcon-pic ">
+                            </div>
+                            <div class="team-body">
+                                <h6 class="team-title">Dejesus Michael</h6>
+                                <p class="team-subTitle">dejesusmichael@mail.org</p>
+                            </div>
+                            <div class="team-input-body">
+                                <select class=" team-control  team-select" aria-label="Default select example ">
+                                    <option selected> Role:<h6 class="selectHead">Admin </h6>
+                                        <span class="team-Dropdown">
+                                            <p class="droppragragh">
+                                                Can read, clone, and push to this repository. Can also manage issues,
+                                                pull requests, and repository settings, including adding collaborators.
+                                            </p>
+                                        </span>
+                                    </option>
+                                    <option value="1">Role: <h6 class="selectHead">Read </h6>
+                                        <p class="selectBody">
+                                            Can read and clone this repository. Can also open and comment on issues
+                                            and pull requests. </p>
+                                    </option>
+                                    <option value="2">Role:<h6 class="selectHead">Write </h6>
+                                        <p class="selectBody"> Can read, clone, and push to this repository. Can
+                                            also manage issues and pull requests.</p>
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="team-body-icon">
+                                <img src="/assets/images/trash.svg" alt="trash" class="team-mainIcon ">
+                            </div>
+                        </div>
+                        <div class="team-line"></div>
+                        <div class="team-body-wrapper">
+                            <div class="team-header">
+                                <img src="/assets/images/female-07.jpg" alt="account" class="team-mainIcon-pic ">
+                            </div>
+                            <div class="team-body">
+                                <h6 class="team-title">Dejesus Michael</h6>
+                                <p class="team-subTitle">dejesusmichael@mail.org</p>
+                            </div>
+                            <div class="team-input-body">
+                                <select class=" team-control  team-select" aria-label="Default select example ">
+                                    <option selected> Role:<h6 class="selectHead">Admin </h6>
+                                        <span class="team-Dropdown">
+                                            <p class="droppragragh">
+                                                Can read, clone, and push to this repository. Can also manage issues,
+                                                pull requests, and repository settings, including adding collaborators.
+                                            </p>
+                                        </span>
+                                    </option>
+                                    <option value="1">Role: <h6 class="selectHead">Read </h6>
+                                        <p class="selectBody">
+                                            Can read and clone this repository. Can also open and comment on issues
+                                            and pull requests. </p>
+                                    </option>
+                                    <option value="2">Role:<h6 class="selectHead">Write </h6>
+                                        <p class="selectBody"> Can read, clone, and push to this repository. Can
+                                            also manage issues and pull requests.</p>
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="team-body-icon">
+                                <img src="/assets/images/trash.svg" alt="trash" class="team-mainIcon ">
                             </div>
                         </div>
                     </div>
-                    <!-- End of  team -->
                 </div>
+                <!-- End of List -->
+                <!-- End of  team -->
             </div>
         </div>
     </div>
